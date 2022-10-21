@@ -1,0 +1,31 @@
+<h2 class="text-center">ADD NEW EMPLOYEE</h2>
+
+<div class="col-md-6 offset-md-3">
+<form (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+        <label>FIRST NAME</label>
+        <input type="text" class="form-control" id="firstname"
+            [(ngModel)] = "employee.firstname"  name = "firstname">
+    </div>
+    <div class="form-group">
+        <label>LAST NAME</label>
+        <input type="text" class="form-control" id="lastname"
+            [(ngModel)] = "employee.lastname"  name = "lastname">
+    </div>
+    <div class="form-group">
+        <label>CONTACT NO</label>
+        <input type="text" class="form-control" id="contactno"
+            [(ngModel)] = "employee.contactno"  name = "contactno">
+    </div>
+    <div class="form-group">
+        <label>EMAIL ID</label>
+        <input type="text" class="form-control" id="emailid"
+            [(ngModel)] = "employee.emailid"  name = "emailid">
+    </div>
+
+    
+    <button class="btn btn-success" type="submit">Submit</button>
+   
+</form>
+</div>
